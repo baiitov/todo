@@ -1,0 +1,51 @@
+
+.done{
+    text-decoration: line-through;
+    color: red;
+    font-weight: 600;
+
+}
+.list{
+    margin-left: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 60px;
+    background-color: cadetblue;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.list div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+
+
+.task{
+    color: rgb(18, 9, 151);
+    
+}
+.btn {
+    transition-duration: 0.4s;
+    background-color: #4caf96; /* Green */
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+
+  }
+  
+  .btn:hover {
+    background-color: #2522c4; /* Green */
+    color: white;
+  }

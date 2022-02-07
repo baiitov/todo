@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
+import TodoAdd from './components/TodoAdd';
+import TodoList from './components/TodoList';
 
 function App() {
+  const [data,setData] = useState([])
+   const dataHandler = (newData) =>{
+       setData([...data,newData])
+   }
+   useEffect(()=>{
+    const  localData = JSON.parse(localStorage.getItem('key'))
+    setData(localData || [])
+    console.log(localData);
+  },[])
+  
+   useEffect(()=>{
+     localStorage.setItem('key', JSON.stringify(data))
+   },[data])
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <TodoAdd onGetData = {dataHandler}/>
+       <TodoList data = {data} setData={setData}/>
     </div>
   );
 }
 
 export default App;
+

@@ -1,0 +1,30 @@
+
+.container{
+    width: 900px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.inp{
+    width: 450px;
+    height: 30px;
+     margin-top: 20px;
+}
+    .btn {
+        transition-duration: 0.4s;
+        background-color: #8a8f8e; /* Green */
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+    
+    
+      }
+      
+      .btn:hover {
+        background-color: #2522c4; /* Green */
+        color: white;
+      }

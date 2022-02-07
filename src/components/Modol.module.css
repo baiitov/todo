@@ -1,0 +1,53 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(148, 126, 126, 0.75);
+}
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+
+}
+.title{
+    background: #4F005F;
+    padding: 1rem;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 30px;
+
+}
+.header{
+    text-align: center;
+    margin: 0;
+    color: white;
+    width: 600px;
+    height: 200px;
+    background-color: #4F005F;
+    margin-left: 250px;
+    border-radius: 30px;
+}
+.btn {
+    transition-duration: 0.4s;
+    background-color: #4caf96; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #2522c4; /* Green */
+    color: white;
+  }
